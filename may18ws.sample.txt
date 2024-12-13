@@ -1,0 +1,16 @@
+group	Sample
+deep.sed.wm1.NA0004269421	deep.sed.wm1
+deep.sed.wm2.NA0004269377	deep.sed.wm2
+deep.sed.wp1.NA0004270319   deep.sed.wp1	
+deep.sed.wp2.NA0004270327	deep.sed.wp2
+deep.water.wp1.BlitzH2O11	deep.water.wp1
+deep.water.wp2.BlitzH2O1	deep.water.wp2
+deep.water.wm2.BlitzH2O51   deep.water.wm2	
+wet.soil.1.wm1.NA0004269390	wet.soil.1.wm1
+wet.soil.1.wm2.NA0004269413	wet.soil.1.wm2
+wet.soil.1.wp1.NA0004270307	wet.soil.1.wp1
+wet.soil.1.wp2.NA0004270303	wet.soil.1.wp2
+wet.soil.2.wm1.NA0004269414	wet.soil.2.wm1
+wet.soil.2.wm2.NA0004269401	wet.soil.2.wm2
+wet.soil.2.wp1.NA0004270311	wet.soil.2.wp1
+wet.soil.2.wp2.NA0004270339 wet.soil.2.wp2	

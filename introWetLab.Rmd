@@ -1,0 +1,85 @@
+---
+title: "WetLabOverview"
+author: "Kendra Maas"
+date: "December 16, 2024"
+output:
+   slidy_presentation:
+    fig_caption: yes
+    fig_height: 6
+    fig_width: 7
+    incremental: yes
+---
+
+----
+
+#Cartoon of wet lab process
+
+
+![wetlab](microbial_community_analysis.jpg){width=80%}
+
+----
+
+# cartoon DNA extraction
+
+![DNAextraction](DNAextraction13595_2018_705_Fig2_HTML.gif){width=80%}
+
+----
+
+#Cartoon of wet lab process
+
+
+![wetlab](microbial_community_analysis.jpg){width=80%}
+
+----
+
+# cartoon of PCR1
+
+![PCR](pcr-components_med.jpeg){width=80%}
+----
+
+# cartoon of PCR2
+
+![PCR2](pcr_factsheet.jpg){width=80%}
+
+----
+
+#Cartoon of wet lab process
+
+
+![wetlab](microbial_community_analysis.jpg){width=80%}
+
+----
+
+# Illumina sequencing 1
+
+![illumina1](IlluminaSequencing3-s2.0-B9780128022344000021-f02-39-9780128022344.jpg){width=80%}
+
+----
+
+# Illumina sequencing 2
+
+![illumina2](Illumina-sequencing-technology-overview-wwwilluminacom.jpg){width=80%}
+
+
+
+
+---
+
+# What's next?
+
+More data! Or less?
+
+- v4 sequencing dictated by Illumina technology, not superiority of v4 alone
+- Single variable region often only gives genus level resolution
+- Full 16S usually gives species, sometimes subspecies
+
+- ![Long Reads](Nanopore-sequencing.jpg){width=80%}
+
+- ** Tens of thousands of short reads < Fewer long reads **
+- *** As long as the quality of the long reads is g'nuff ***
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+---
+title: "mothur.cheatsheet"
+author: "Kendra Maas"
+date: "August 15, 2022"
+output: html_document
+
+---
+#List of mothur commands#
+
+##Reduce PCR and seqeuencing errors
+
+Command | Purpose | Finer Points  
+---------------|----------------------|--------------------
+make.contigs() | Overlap forward and reverse read | Similar to Pandaseq, q score difference not cutoff
+summary.seqs() | Check length distribution  |  
+screen.seqs(maxambig, maxlength) | Remove ambiguous bases, too short/long seqs | We remove any seq with any N, length trim *could* have phylogenetic bias  
+
+##Housekeeping
+
+Command | Purpose | Finer Points  
+---------------|----------------------|--------------------
+unique.seqs() | Reduces computation cost | count replicats but remove from fasta  
+count.seqs() | Reduces computation cost | replaces names and groups  
+summmary.seqs() |  |  
+pcr.seqs() | create database w/ just v4 | only need to do once per target
+system(mv) | call bash commands within mothur |  
+summary.seqs() | check seqs in silva alignment |  
+
+##Continue cleaning seqs
+
+Command | Purpose | Finer Points  
+---------------|----------------------|--------------------
+align.seqs() | Align to reference | Any alignment is acceptable  
+summary.seqs() |  |    
+screen.seqs(start, end, maxhomop) | remove seqs misaligned, homopolymers | Further cleaning PCR/sequencing errors using secondary structure  
+filter.seqs(vertical) | remove columns that are all gaps | trump=T removes columns if any gap  
+summary.seqs() |  |  
+
+##Chimera checking
+
+Command | Purpose | Finer Points  
+---------------|----------------------|--------------------
+pre.cluster(diffs) | cluster at 1% differences to reduce computation cost | greedy clustering, balance reducing data w/maintaining diversity  
+summary.seqs() |  | Check change in unique sequences
+chimera.uchime(dereplicate) | de novo find chimera within each sample | dereplicate, remove chimera from all samples?  
+remove.seqs() | | defaults remove all flagged seqs  
+summary.seqs() | |  
+
+##Cluster
+
+Command | Purpose | Finer Points  
+---------------|----------------------|--------------------
+classify.seqs(reference, taxonomy) | | default Wang/RDP  
+remove.lineage(taxon) | remove wetlab bycatch | Chloroplast-Mitochondria-unknown-Archaea-Eukaryota  
+summary.tax() | | file for Krona plots  
+cluster.split(splitmethod, taxlevel, cutoff) | heuristic cluster within taxon | limiting by classification reduces computation without greedy  
+make.shared(label) | create OTU table | uneven seqs/sample  
+classify.otu() | attach names to OTUs | Doesn't impact clustering  
+get.oturep(method) | abudance or centroid |  
+
+##Alpha and Beta diversity
+
+Command | Purpose | Finer Points  
+---------------|----------------------|--------------------
+count.groups() | | determine subsample level  
+summary.single(calc, subsample)| alpha diversity |   
+dist.shared(calc, subsample, iters) | beta diversity | reduce iters if in a hurry  
+sub.sample(shared, size) | | For feature selection  
+
+
+Mothur has many other options, these are just the ones that I think always need to be considered

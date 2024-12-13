@@ -1,0 +1,144 @@
+---
+title: "Intro to Microbial Communities"
+author: "Kendra Maas"
+date: "December 16, 2024"
+output:
+   slidy_presentation:
+    fig_caption: yes
+    fig_height: 6
+    fig_width: 7
+    incremental: yes
+---
+
+----
+
+#Why are we here?
+
+ - Microbes control everything!^*
+ - We can!
+ 
+ 
+ 
+ 
+ - ^* Well almost, sort of
+
+----
+
+![Sequencing Costs by year](ncbi-genomes.svg){width=80%}
+
+----
+
+![My career and sequencing](careerTimeline.png){width=80%}
+
+
+----
+
+#Community profile
+
+- Conserved gene 
+    - Balance homology and variability 
+ ![16S varibility](16s.nrmicro3330-f1.jpg){width=40%}
+
+----
+
+#Community profile
+
+- Conserved gene
+    - Balance homology and variability  
+![16S varibility2](amplicon-sequencing-introduction-9-638.jpg){width=80%}
+
+----
+
+#Cartoon of wet lab process
+
+
+![wetlab](microbial_community_analysis.jpg){width=80%}
+
+----
+
+#Species?
+
+![Identify species present](speciesASV.png)
+
+Christophe Fraser,Eric J. Alm, Martin F. Polz, Brian G. Spratt, William P. Hanage
+Science 6 February 2009: Vol. 323 no. 5915 pp. 741-746 DOI: 10.1126/science.1159388 
+
+
+
+----
+
+#Why are we here?
+
+
+ - What to do with MB-GB of sequencing data?
+    - Great there are programs!
+    - Oh they're only command line
+ - How to make sense of complex communities?
+    - Multivariate
+    - Non-linear
+    - Non-normal
+    - Independent variables?
+
+----
+
+#Why are we here?
+
+- Command line
+    - Learning curve
+    - Customization
+    - Learning curve
+    - ![LearningCurve](learningCurve.png){width=40%}
+
+- **Reproducible Research**
+
+----
+
+#Reproducible Research
+
+- Document process so it can be replicated
+- Enable collaborative analysis
+- Reduce time repeating analyses
+
+ - Your most important collaborator is yourself 3 months ago and that collaborator doesn't answer emails.
+
+----
+
+#Cautionary tale
+
+![ebola1](repro.research.ebola1.jpg)
+
+----
+
+#Cautionary tale
+
+![ebola2](repro.research.ebola2.jpg)
+
+----
+
+#Cautionary tale
+
+![ebola3](repro.research.ebola3.jpg)
+
+----
+
+Etherpad for this workshop  
+<https://etherpad.mit.edu/p/20241216MEworkshop>
+
+Data for the course  
+<https://drive.google.com/file/d/1n4hGgcDXhrbT9Rd1gKbWmgxdDMA3POce/view?usp=sharing>
+
+mothur
+
+Detailed, well documented guide for mothur  
+<http://www.mothur.org/wiki/MiSeq_SOP>
+
+
+My scripts for working with sequence data  
+<https://github.com/krmaas/bioinformatics/>
+
+dada2
+
+Good guide for dada2 using the mothur SOP dataset  
+<https://benjjneb.github.io/dada2/tutorial.html>
+
+----
